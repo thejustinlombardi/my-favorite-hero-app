@@ -1,3 +1,66 @@
-nav a {
-	text-decoration: none;
+* {
+	box-sizing: border-box;
+}
+@media (min-width: 450px) {
+	h1 {
+		font-family: "Fredericka the Great", cursive;
+		font-size: 4rem;
+		letter-spacing: 1rem;
+		text-align: center;
+		/* animation: color-change 1s infinite; */
+	}
+
+	@keyframes color-change {
+		0% {
+			color: white;
+		}
+		50% {
+			color: white;
+		}
+		100% {
+			color: black;
+		}
+	}
+
+	div a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.app-container {
+		border: 2px solid red;
+	}
+	.app-header {
+		border: 2px solid red;
+	}
+	.app-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-end;
+		/* font-family: "Cinzel Decorative", cursive;
+	font-family: "Fredericka the Great", cursive;
+	font-family: "Kings", cursive;
+	font-family: "Oswald", sans-serif;
+	font-family: "Rock Salt", cursive; */
+		font-family: "Rye", cursive;
+		padding: 0px 0px 40px 0px;
+		font-size: 2rem;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.home-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+	}
+
+	img {
+		height: 100px;
+		width: 100px;
+	}
 }

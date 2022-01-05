@@ -1,7 +1,16 @@
 import React from "react";
 
-function HeroDetails(props) {
-	return <div></div>;
+function HeroDetails({ hero }) {
+	return (
+		<div>
+			{hero.map((hero) => (
+				<div key={hero.id} className="card">
+					<img src={hero.image.url} alt={hero.name} />
+					<h2>{hero.name}</h2>
+				</div>
+			))}
+		</div>
+	);
 }
 
 export default HeroDetails;

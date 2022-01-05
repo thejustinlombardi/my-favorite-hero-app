@@ -7,6 +7,7 @@ import HeroList from "./components/Heroes/HeroList";
 import HeroViewer from "./components/Heroes/HeroViewer";
 import HeroDetails from "./components/Heroes/HeroDetails";
 import HeroFavorites from "./components/Heroes/HeroFavorites";
+import HeroSearchForm from "./components/Heroes/HeroSearchForm";
 
 import "./App.css";
 
@@ -110,17 +111,20 @@ function App() {
 	const [heroes, setHeroes] = useState([]);
 
 	return (
-		<div>
-			<nav>
+		<div className="app-container">
+			<header className="app-header">
 				<Link to="/">
-					<img src="" alt="" />
 					<h1>My Favorite Hero</h1>
+					<img src="" alt="" />
 				</Link>
-				<Link to="/">Home</Link>
-				<Link to="heroes">Heroes</Link>
-				<Link to="favorites">Favorites</Link>
-				<Link to="about">About</Link>
-			</nav>
+				<nav className="app-nav">
+					<Link to="/">Home</Link>
+					<Link to="heroes">Heroes</Link>
+					<Link to="favorites">Favorites</Link>
+					<Link to="about">About</Link>
+				</nav>
+			</header>
+
 			<main>
 				<Routes>
 					<Route
@@ -128,8 +132,10 @@ function App() {
 						element={<Home heroes={heroes} setHeroes={setHeroes} />}
 					/>
 					<Route path="heroes" element={<HeroList />} />
+					<Route path="heroes" element={<HeroSearchForm />} />
 				</Routes>
 			</main>
+			<footer>LinkedIn: Gmail:</footer>
 		</div>
 	);
 }
