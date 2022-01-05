@@ -108,7 +108,7 @@ function App() {
 	];
 
 	const [heroes, setHeroes] = useState([]);
-	console.log(heroes);
+
 	return (
 		<div>
 			<nav>
