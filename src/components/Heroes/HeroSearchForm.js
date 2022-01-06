@@ -1,10 +1,15 @@
 import React from "react";
 
-function HeroSearchForm({ handleChange, handleSubmit, searchHero }) {
+function HeroSearchForm({
+	handleChange,
+	handleSubmit,
+	searchHero,
+	getRandomHero,
+}) {
 	return (
 		<form onSubmit={handleSubmit} className="form-horizontal">
 			<input
-				placeholder="Search your Hero"
+				placeholder="Search Hero"
 				type="text"
 				name="searchHero"
 				required

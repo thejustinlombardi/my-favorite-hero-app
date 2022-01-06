@@ -5,12 +5,13 @@ import HeroDetails from "./HeroDetails";
 function HeroViewer(props) {
 	const { hero } = props;
 
-	if (!hero.length) {
-		return <h2>No Hero Found!</h2>;
-	}
 	return (
 		<div>
-			<HeroDetails hero={hero} />
+			{hero ? (
+				<HeroDetails hero={hero} />
+			) : (
+				<h2 className="try-h2">No Hero matches that search. Try Again!</h2>
+			)}
 		</div>
 	);
 }
