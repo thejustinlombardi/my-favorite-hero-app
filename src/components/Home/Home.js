@@ -1,36 +1,45 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 function Home(props) {
 	const searchOptions = {
 		token: process.env.REACT_APP_HERO_TOKEN,
 		api: "https://superheroapi.com/api.php/",
-		id: "/23",
 	};
-
+	const [heroes, setHeroes] = useState([]);
 	useEffect(() => {
-		getHero();
+		Promise.all([
+			getRandomHero(),
+			getRandomHero(),
+			getRandomHero(),
+			getRandomHero(),
+			getRandomHero(),
+		]).then((values) => setHeroes(values));
 	}, []);
 
-	function getHero() {
-		const url = `${searchOptions.api}${searchOptions.token}${searchOptions.id}`;
-		fetch(url)
-			.then((res) => res.json())
+	function getRandomHero() {
+		let randomID = getRandomNumber(1, 731);
+		const url = `${searchOptions.api}${searchOptions.token}/${randomID}`;
+		return (
+			fetch(url)
+				.then((res) => res.json())
 
-			.then((json) => {
-				props.setHeroes(json);
-			})
-			.catch(console.error);
+				// .then((json) => {
+				// 	props.setHeroes(json);
+				// })
+				.catch(console.error)
+		);
 	}
 	function getRandomNumber(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
 	return (
 		<div className="home-container">
-			<img src={props.heroes.image && props.heroes.image.url} alt="" />
-			<img src={props.heroes.image && props.heroes.image.url} alt="" />
-			<img src={props.heroes.image && props.heroes.image.url} alt="" />
-			<img src={props.heroes.image && props.heroes.image.url} alt="" />
-			<img src={props.heroes.image && props.heroes.image.url} alt="" />
+			{heroes.map((hero) => (
+				<div key={hero.id} className="random-card">
+					<img src={hero.image && hero.image.url} alt={hero.name} />
+					<h2>{hero.name}</h2>
+				</div>
+			))}
 		</div>
 	);
 }

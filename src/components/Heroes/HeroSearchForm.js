@@ -10,8 +10,11 @@ function HeroSearchForm({ handleChange, handleSubmit, searchHero }) {
 				required
 				onChange={handleChange}
 				value={searchHero}
+				className="search-bar"
 			/>
-			<button type="submit">Get Hero!</button>
+			<button type="submit" className="form-button">
+				Get Hero!
+			</button>
 		</form>
 	);
 }

@@ -9,7 +9,7 @@ function HeroViewer(props) {
 		return <h2>No Hero Found!</h2>;
 	}
 	return (
-		<div className="hero-card">
+		<div>
 			<HeroDetails hero={hero} />
 		</div>
 	);

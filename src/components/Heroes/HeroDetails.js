@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroDetails({ hero }) {
 	return (
-		<div>
+		<div className="hero-card">
 			{hero.map((hero) => (
 				<div key={hero.id} className="card">
 					<img src={hero.image.url} alt={hero.name} />
