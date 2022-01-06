@@ -11,12 +11,12 @@ h1 {
 	font-size: 4rem;
 	letter-spacing: 1rem;
 	text-align: center;
-	animation: glow 1s ease-in-out infinite alternate;
+	/* animation: glow 1s ease-in-out infinite alternate; */
 }
 
 /* Reference for glowing text effect */
 /* https://www.w3docs.com/snippets/css/how-to-create-a-glowing-text.html */
-@keyframes glow {
+/* @keyframes glow {
 	from {
 		text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
 			0 0 40px #000000, 0 0 50px red, 0 0 60px red, 0 0 70px red;
@@ -25,7 +25,7 @@ h1 {
 		text-shadow: 0 0 20px #eeeeee, 0 0 30px red, 0 0 40px red, 0 0 50px red,
 			0 0 60px red, 0 0 70px red, 0 0 80px red;
 	}
-}
+} */
 
 .title {
 	text-decoration: none;
@@ -164,4 +164,5 @@ footer {
 	justify-content: space-around;
 	font-family: "Rye", cursive;
 	letter-spacing: 0.5rem;
+	margin: 20px 0px 20px 0px;
 }
