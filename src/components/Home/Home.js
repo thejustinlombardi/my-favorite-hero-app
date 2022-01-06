@@ -8,16 +8,16 @@ function Home(props) {
 	const [heroes, setHeroes] = useState([]);
 	useEffect(() => {
 		Promise.all([
-			getRandomHero(),
-			getRandomHero(),
-			getRandomHero(),
-			getRandomHero(),
-			getRandomHero(),
+			getRandomHero(68),
+			getRandomHero(612),
+			getRandomHero(530),
+			getRandomHero(201),
+			getRandomHero(165),
 		]).then((values) => setHeroes(values));
 	}, []);
 
-	function getRandomHero() {
-		let randomID = getRandomNumber(1, 731);
+	function getRandomHero(randomID) {
+		// let randomID = getRandomNumber(1, 731);
 		const url = `${searchOptions.api}${searchOptions.token}/${randomID}`;
 		return (
 			fetch(url)
@@ -32,14 +32,34 @@ function Home(props) {
 	function getRandomNumber(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
+
+	if (!heroes) {
+		return <p>Loading Hero...Greatness Awaits!</p>;
+	}
 	return (
 		<div className="home-container">
-			{heroes.map((hero) => (
-				<div key={hero.id} className="random-card">
-					<img src={hero.image && hero.image.url} alt={hero.name} />
-					<h2>{hero.name}</h2>
-				</div>
-			))}
+			<div className="welcome-div">
+				<h2>Welcome, Heroes!</h2>
+			</div>
+
+			<div className="random-card">
+				<img src="https://i.imgur.com/MkUNj1z.jpg" alt="batgirl" />
+			</div>
+			<div className="random-card">
+				<img src="https://i.imgur.com/vPV21zn.jpg" alt="spawn" />
+			</div>
+			<div className="random-card">
+				<img src="https://i.imgur.com/CkEJNR0.jpg" alt="spiderman" />
+			</div>
+			<div className="random-card">
+				<img src="https://i.imgur.com/tQSCnil.jpg" alt="punisher" />
+			</div>
+			<div className="random-card">
+				<img src="https://i.imgur.com/lwfsgxk.jpg" alt="catwoman" />
+			</div>
+			<div className="random-card">
+				<img src="https://i.imgur.com/7mYOH2O.jpg" alt="bucky" />
+			</div>
 		</div>
 	);
 }

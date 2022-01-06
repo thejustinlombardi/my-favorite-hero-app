@@ -16,7 +16,6 @@ function App() {
 			<header className="app-header">
 				<Link to="/">
 					<h1>My Favorite Hero</h1>
-					<img src="" alt="" />
 				</Link>
 				<nav className="app-nav">
 					<Link to="/">Home</Link>
@@ -33,7 +32,10 @@ function App() {
 					<Route path="heroes" element={<HeroSearchForm />} />
 				</Routes>
 			</main>
-			<footer>LinkedIn: Gmail:</footer>
+			<footer>
+				<p>LinkedIn:</p>
+				<p>Gmail:</p>
+			</footer>
 		</div>
 	);
 }
