@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 
 import Home from "./components/Home/Home";
 import HeroList from "./components/Heroes/HeroList";
-import HeroViewer from "./components/Heroes/HeroViewer";
-import HeroDetails from "./components/Heroes/HeroDetails";
+import HeroCard from "./components/Heroes/HeroCard";
 import HeroFavorites from "./components/Heroes/HeroFavorites";
 import HeroSearchForm from "./components/Heroes/HeroSearchForm";
 
@@ -14,9 +12,7 @@ function App() {
 	return (
 		<div className="app-container">
 			<header className="app-header">
-				<Link to="/">
-					<h1>My Favorite Hero</h1>
-				</Link>
+				<h1 className="glow">My Favorite Hero</h1>
 				<nav className="app-nav">
 					<Link to="/">Home</Link>
 					<Link to="heroes">Heroes</Link>
@@ -30,6 +26,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="heroes" element={<HeroList />} />
 					<Route path="heroes" element={<HeroSearchForm />} />
+					<Route path="heroes/:id" element={<HeroCard />} />
 				</Routes>
 			</main>
 			<footer>
