@@ -46,7 +46,6 @@ function HeroCard(props) {
 				<h4>First Appearance: {card.biography["first-appearance"]}</h4>
 				<h4>Publisher: {card.biography.publisher}</h4>
 				<h4>Group Affiliations: {card.connections["group-affiliation"]}</h4>
-				<h4>Relatives: {card.connections.relatives}</h4>
 			</div>
 		</div>
 	);

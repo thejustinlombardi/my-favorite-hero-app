@@ -10,7 +10,7 @@ function HeroList(props) {
 		endpoint: "/search/",
 	};
 
-	const [searchHero, setSearchHero] = useState("A");
+	const [searchHero, setSearchHero] = useState("");
 
 	const [hero, setHero] = useState([]);
 
