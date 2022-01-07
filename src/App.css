@@ -75,6 +75,11 @@ nav a:hover {
 	margin: 10px 10px;
 }
 
+.random-container {
+	text-align: center;
+	border: 2px solid red;
+}
+
 .form-horizontal {
 	display: flex;
 	flex-direction: row;
