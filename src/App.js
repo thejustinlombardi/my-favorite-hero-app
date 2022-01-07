@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import HeroList from "./components/Heroes/HeroList";
 import HeroCard from "./components/Heroes/HeroCard";
 import HeroFavorites from "./components/Heroes/HeroFavorites";
+import RandomHero from "./components/Heroes/RandomHero";
 import HeroSearchForm from "./components/Heroes/HeroSearchForm";
 
 import "./App.css";
@@ -16,7 +17,7 @@ function App() {
 				<nav className="app-nav">
 					<Link to="/">Home</Link>
 					<Link to="heroes">Heroes</Link>
-					<Link to="favorites">Favorites</Link>
+					<Link to="random-hero">Random Hero</Link>
 					<Link to="about">About</Link>
 				</nav>
 			</header>
@@ -26,6 +27,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="heroes" element={<HeroList />} />
 					<Route path="heroes" element={<HeroSearchForm />} />
+					<Route path="random-hero" element={<RandomHero />} />
 					<Route path="heroes/:id" element={<HeroCard />} />
 				</Routes>
 			</main>
