@@ -27,15 +27,18 @@ function RandomHero(props) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
 
+	function handleImageError(event) {
+		event.currentTarget.src = "https://i.imgur.com/JNKyLlj.jpg";
+	}
+
 	if (!heroes) {
 		return <p>Loading Hero...Greatness Awaits!</p>;
 	}
 	return (
 		<div className="random-container">
 			<button onClick={getRandomHero} className="random-button">
-				Get Random Hero!
+				Get Hero!
 			</button>
-
 			<div className="random-hero-card">
 				{!heroes.image?.url ? (
 					<p>Loading Hero...Greatness Awaits!</p>
@@ -45,6 +48,7 @@ function RandomHero(props) {
 							src={heroes.image?.url}
 							alt={heroes.name}
 							className="card-img"
+							onError={handleImageError}
 						/>
 						<h2 className="card-title">{heroes.name}</h2>
 					</Link>

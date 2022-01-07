@@ -34,7 +34,7 @@ function App() {
 				<a href="https://www.linkedin.com/in/justin-lombardi-creates/">
 					LinkedIn
 				</a>
-				<p>thejustinlombardi@gmail.com</p>
+				<a href="thejustinlombardi@gmail.com">Gmail</a>
 			</footer>
 		</div>
 	);

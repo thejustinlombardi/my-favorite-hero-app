@@ -8,24 +8,10 @@ html {
 
 h1 {
 	font-family: "Fredericka the Great", cursive;
-	font-size: 4rem;
+	font-size: 3rem;
 	letter-spacing: 1rem;
 	text-align: center;
-	/* animation: glow 1s ease-in-out infinite alternate; */
 }
-
-/* Reference for glowing text effect */
-/* https://www.w3docs.com/snippets/css/how-to-create-a-glowing-text.html */
-/* @keyframes glow {
-	from {
-		text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
-			0 0 40px #000000, 0 0 50px red, 0 0 60px red, 0 0 70px red;
-	}
-	to {
-		text-shadow: 0 0 20px #eeeeee, 0 0 30px red, 0 0 40px red, 0 0 50px red,
-			0 0 60px red, 0 0 70px red, 0 0 80px red;
-	}
-} */
 
 .title {
 	text-decoration: none;
@@ -35,21 +21,15 @@ h1 {
 
 .app-container {
 	color: white;
-	/* border: 2px solid red; */
 }
 
 .app-nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-end;
-	/* font-family: "Cinzel Decorative", cursive;
-	font-family: "Fredericka the Great", cursive;
-	
-
-	font-family: "Rock Salt", cursive; */
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	font-family: "Rye", cursive;
-	padding: 0px 0px 40px 0px;
+	padding: 10px 0px 10px 0px;
 	font-size: 1.5rem;
 }
 
@@ -75,29 +55,13 @@ nav a:hover {
 	margin: 10px 10px;
 }
 
-.random-container {
-	display: grid;
-	grid-template-rows: 50px 0.5fr;
-	grid-template-columns: repeat(3, 0.5fr);
-}
-
-.random-button {
-	grid-row: 1;
-	grid-column: 2;
-	margin-left: 5px;
-	padding: 20px;
-	font-size: 1rem;
-	color: white;
-	font-family: "Rye", cursive;
-	background-color: black;
-	letter-spacing: 0.25rem;
-}
-
-.random-hero-card {
-	display: grid;
-	grid-column: 2;
-	grid-row: 2;
-	margin: 20px 20px;
+.home-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	opacity: 0.75;
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .form-horizontal {
@@ -105,12 +69,12 @@ nav a:hover {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 40px;
+	padding: 20px;
 }
 
 .search-bar {
 	width: 30%;
-	padding: 20px;
+	padding: 10px;
 	font-size: 1rem;
 	text-overflow: ellipsis;
 	font-family: "Rye", cursive;
@@ -118,7 +82,7 @@ nav a:hover {
 
 .form-button {
 	margin-left: 5px;
-	padding: 20px;
+	padding: 10px;
 	font-size: 1rem;
 	color: white;
 	font-family: "Rye", cursive;
@@ -127,30 +91,47 @@ nav a:hover {
 }
 
 img {
-	object-fit: cover;
+	object-fit: fill;
 	width: 100%;
 	height: 100%;
 }
+.random-hero-card {
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.random-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px 10px 0px 10px;
+}
+
+.random-button {
+	margin: 10px;
+	font-size: 1rem;
+	color: white;
+	font-family: "Rye", cursive;
+	background-color: black;
+}
 
 .hero-card {
-	display: grid;
-	grid-template-columns: repeat(3, 0.5fr);
-	grid-template-rows: 0.5fr;
-	gap: 40px;
-	margin: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px 10px 0px 10px;
 }
 
 .details-container {
-	display: grid;
-	grid-template-columns: repeat(3, 0.5fr);
-	grid-template-rows: 0.5fr;
-	gap: 40px;
-	margin: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px 10px 0px 10px;
 	border: 1px solid white;
 }
 
 .details {
-	grid-column: 2/4;
 	font-family: "Fredericka the Great", cursive;
 	letter-spacing: 0.2rem;
 	line-height: 2.5rem;
@@ -164,15 +145,6 @@ div a {
 	border: 1px solid white;
 	text-decoration: none;
 	color: white;
-}
-
-.home-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	opacity: 0.75;
-	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .info-card {
@@ -198,7 +170,7 @@ div a:hover {
 	font-family: "Fredericka the Great", cursive;
 	font-size: 2rem;
 	letter-spacing: 1rem;
-	line-height: 4rem;
+	line-height: 3rem;
 }
 
 .try-h2 {
@@ -211,4 +183,199 @@ footer {
 	font-family: "Rye", cursive;
 	letter-spacing: 0.5rem;
 	margin: 20px 0px 20px 0px;
+}
+@media (min-width: 450px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		background-image: url("https://i.imgur.com/F77OLFH.jpg");
+	}
+
+	h1 {
+		font-family: "Fredericka the Great", cursive;
+		font-size: 4rem;
+		letter-spacing: 1rem;
+		text-align: center;
+	}
+
+	.title {
+		text-decoration: none;
+		color: white;
+		border: none;
+	}
+
+	.app-container {
+		color: white;
+	}
+
+	.app-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-end;
+		font-family: "Rye", cursive;
+		padding: 0px 0px 40px 0px;
+		font-size: 1.5rem;
+	}
+
+	nav a {
+		text-decoration: none;
+		color: white;
+		background-color: transparent;
+		padding: 10px;
+		border: 2px solid white;
+	}
+
+	nav a:hover {
+		background-color: transparent;
+		box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
+		transform: scale(1.1);
+	}
+
+	.home-container {
+		display: grid;
+		grid-template-columns: repeat(3, 0.5fr);
+		grid-template-rows: 0.5fr;
+		gap: 40px;
+		margin: 10px 10px;
+	}
+
+	.random-container {
+		display: grid;
+		grid-template-rows: 50px 0.5fr;
+		grid-template-columns: repeat(3, 0.5fr);
+	}
+
+	.random-button {
+		grid-row: 1;
+		grid-column: 2;
+		margin-left: 5px;
+		padding: 20px;
+		font-size: 1rem;
+		color: white;
+		font-family: "Rye", cursive;
+		background-color: black;
+		letter-spacing: 0.25rem;
+	}
+
+	.form-horizontal {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+	}
+
+	.search-bar {
+		width: 30%;
+		padding: 20px;
+		font-size: 1rem;
+		text-overflow: ellipsis;
+		font-family: "Rye", cursive;
+	}
+
+	.form-button {
+		margin-left: 5px;
+		padding: 20px;
+		font-size: 1rem;
+		color: white;
+		font-family: "Rye", cursive;
+		background-color: black;
+		letter-spacing: 0.25rem;
+	}
+
+	img {
+		object-fit: fill;
+		width: 100%;
+		height: 100%;
+	}
+	.random-hero-card {
+		display: grid;
+		grid-column: 2;
+		grid-row: 2;
+		margin: 20px 20px;
+	}
+
+	.hero-card {
+		display: grid;
+		grid-template-columns: repeat(3, 0.5fr);
+		grid-template-rows: 0.5fr;
+		gap: 40px;
+		margin: 20px 20px;
+	}
+
+	.details-container {
+		display: grid;
+		grid-template-columns: repeat(3, 0.5fr);
+		grid-template-rows: 0.5fr;
+		gap: 40px;
+		margin: 20px 20px;
+		border: 1px solid white;
+	}
+
+	.details {
+		grid-column: 2/4;
+		font-family: "Fredericka the Great", cursive;
+		letter-spacing: 0.2rem;
+		line-height: 2.5rem;
+	}
+
+	div a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		border: 1px solid white;
+		text-decoration: none;
+		color: white;
+	}
+
+	.home-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		opacity: 0.75;
+		clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	}
+
+	.info-card {
+		border: 1px solid white;
+	}
+
+	.card-title {
+		font-family: "Rye", cursive;
+	}
+
+	div a:hover {
+		cursor: pointer;
+		/* Used below reference to learn how to enlarge image on hover */
+		/* https://www.codegrepper.com/code-examples/css/how+to+raise+image+when+hover */
+		transform: scale(1.05);
+		box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
+	}
+
+	.welcome-div {
+		grid-column: 1 / 4;
+		grid-row: 2;
+		text-align: center;
+		font-family: "Fredericka the Great", cursive;
+		font-size: 2rem;
+		letter-spacing: 1rem;
+		line-height: 4rem;
+	}
+
+	.try-h2 {
+		text-align: center;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-around;
+		font-family: "Rye", cursive;
+		letter-spacing: 0.5rem;
+		margin: 20px 0px 20px 0px;
+	}
 }

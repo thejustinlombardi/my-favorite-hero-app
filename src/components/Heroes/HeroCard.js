@@ -21,12 +21,21 @@ function HeroCard(props) {
 			.catch(console.error);
 	}, []);
 
+	function handleImageError(event) {
+		event.currentTarget.src = "https://i.imgur.com/JNKyLlj.jpg";
+	}
+
 	if (!card) {
 		return <p>Loading Hero information ...</p>;
 	}
 	return (
 		<div className="details-container">
-			<img src={card.image.url} alt={card.name} className="info-card" />
+			<img
+				src={card.image.url}
+				alt={card.name}
+				className="info-card"
+				onError={handleImageError}
+			/>
 			<div className="details">
 				<h2>Name: {card.name}</h2>
 				<h3>Full Name: {card.biography["full-name"]}</h3>
