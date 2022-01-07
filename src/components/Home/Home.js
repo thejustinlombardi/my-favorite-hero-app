@@ -5,11 +5,11 @@ function Home(props) {
 		<div className="home-container">
 			<div className="welcome-div">
 				<h2>Welcome, Heroes!</h2>
-				<p>
+				<h3>
 					This site is designed for all who are wanting more information on
 					their favorite heroes!
-				</p>
-				<p> Click the `HEROES` tab above and search for your favorite hero!</p>
+				</h3>
+				<h3>Click the `HEROES` tab above and search for your favorite hero!</h3>
 			</div>
 
 			<div className="home-card">

@@ -45,8 +45,8 @@ h1 {
 	align-items: flex-end;
 	/* font-family: "Cinzel Decorative", cursive;
 	font-family: "Fredericka the Great", cursive;
-	font-family: "Kings", cursive;
-	font-family: "Oswald", sans-serif;
+	
+
 	font-family: "Rock Salt", cursive; */
 	font-family: "Rye", cursive;
 	padding: 0px 0px 40px 0px;
@@ -115,6 +115,21 @@ img {
 	margin: 20px 20px;
 }
 
+.details-container {
+	display: grid;
+	grid-template-columns: repeat(3, 0.5fr);
+	grid-template-rows: 0.5fr;
+	gap: 40px;
+	margin: 20px 20px;
+}
+
+.details {
+	grid-column: 2/4;
+	font-family: "Fredericka the Great", cursive;
+	letter-spacing: 0.2rem;
+	line-height: 2.5rem;
+}
+
 div a {
 	display: flex;
 	flex-direction: column;
@@ -153,6 +168,7 @@ div a:hover {
 	font-family: "Fredericka the Great", cursive;
 	font-size: 2rem;
 	letter-spacing: 1rem;
+	line-height: 4rem;
 }
 
 .try-h2 {
