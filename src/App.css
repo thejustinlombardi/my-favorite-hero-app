@@ -76,8 +76,28 @@ nav a:hover {
 }
 
 .random-container {
-	text-align: center;
-	border: 2px solid red;
+	display: grid;
+	grid-template-rows: 50px 0.5fr;
+	grid-template-columns: repeat(3, 0.5fr);
+}
+
+.random-button {
+	grid-row: 1;
+	grid-column: 2;
+	margin-left: 5px;
+	padding: 20px;
+	font-size: 1rem;
+	color: white;
+	font-family: "Rye", cursive;
+	background-color: black;
+	letter-spacing: 0.25rem;
+}
+
+.random-hero-card {
+	display: grid;
+	grid-column: 2;
+	grid-row: 2;
+	margin: 20px 20px;
 }
 
 .form-horizontal {
@@ -126,6 +146,7 @@ img {
 	grid-template-rows: 0.5fr;
 	gap: 40px;
 	margin: 20px 20px;
+	border: 1px solid white;
 }
 
 .details {
@@ -152,6 +173,10 @@ div a {
 	justify-content: space-around;
 	opacity: 0.75;
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.info-card {
+	border: 1px solid white;
 }
 
 .card-title {

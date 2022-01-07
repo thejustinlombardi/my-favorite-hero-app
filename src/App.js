@@ -3,7 +3,6 @@ import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Home from "./components/Home/Home";
 import HeroList from "./components/Heroes/HeroList";
 import HeroCard from "./components/Heroes/HeroCard";
-import HeroFavorites from "./components/Heroes/HeroFavorites";
 import RandomHero from "./components/Heroes/RandomHero";
 import HeroSearchForm from "./components/Heroes/HeroSearchForm";
 

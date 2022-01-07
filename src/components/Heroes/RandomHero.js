@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-import HeroViewer from "./HeroViewer";
 
 function RandomHero(props) {
 	const randomOptions = {
@@ -9,6 +7,10 @@ function RandomHero(props) {
 		api: "https://superheroapi.com/api.php/",
 	};
 	const [heroes, setHeroes] = useState([]);
+
+	useEffect(() => {
+		getRandomHero();
+	}, []);
 
 	function getRandomHero() {
 		let randomID = getRandomNumber(1, 731);
@@ -30,13 +32,13 @@ function RandomHero(props) {
 	}
 	return (
 		<div className="random-container">
-			<button onClick={getRandomHero} className="form-button">
+			<button onClick={getRandomHero} className="random-button">
 				Get Random Hero!
 			</button>
 
-			<div className="hero-card">
+			<div className="random-hero-card">
 				{!heroes.image?.url ? (
-					<p>Click 'Get Random Hero' ! </p>
+					<p>Loading Hero...Greatness Awaits!</p>
 				) : (
 					<Link to={`/heroes/${heroes.id}`} key={heroes.id}>
 						<img
