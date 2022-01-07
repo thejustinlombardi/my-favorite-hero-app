@@ -30,8 +30,10 @@ function App() {
 				</Routes>
 			</main>
 			<footer>
-				<p>LinkedIn:</p>
-				<p>Gmail:</p>
+				<a href="https://www.linkedin.com/in/justin-lombardi-creates/">
+					LinkedIn
+				</a>
+				<p>thejustinlombardi@gmail.com</p>
 			</footer>
 		</div>
 	);

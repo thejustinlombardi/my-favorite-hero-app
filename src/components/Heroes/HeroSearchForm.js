@@ -1,11 +1,6 @@
 import React from "react";
 
-function HeroSearchForm({
-	handleChange,
-	handleSubmit,
-	searchHero,
-	getRandomHero,
-}) {
+function HeroSearchForm({ handleChange, handleSubmit, searchHero }) {
 	return (
 		<form onSubmit={handleSubmit} className="form-horizontal">
 			<input

@@ -11,12 +11,12 @@ h1 {
 	font-size: 4rem;
 	letter-spacing: 1rem;
 	text-align: center;
-	animation: glow 1s ease-in-out infinite alternate;
+	/* animation: glow 1s ease-in-out infinite alternate; */
 }
 
 /* Reference for glowing text effect */
 /* https://www.w3docs.com/snippets/css/how-to-create-a-glowing-text.html */
-@keyframes glow {
+/* @keyframes glow {
 	from {
 		text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000,
 			0 0 40px #000000, 0 0 50px red, 0 0 60px red, 0 0 70px red;
@@ -25,7 +25,7 @@ h1 {
 		text-shadow: 0 0 20px #eeeeee, 0 0 30px red, 0 0 40px red, 0 0 50px red,
 			0 0 60px red, 0 0 70px red, 0 0 80px red;
 	}
-}
+} */
 
 .title {
 	text-decoration: none;
@@ -45,8 +45,8 @@ h1 {
 	align-items: flex-end;
 	/* font-family: "Cinzel Decorative", cursive;
 	font-family: "Fredericka the Great", cursive;
-	font-family: "Kings", cursive;
-	font-family: "Oswald", sans-serif;
+	
+
 	font-family: "Rock Salt", cursive; */
 	font-family: "Rye", cursive;
 	padding: 0px 0px 40px 0px;
@@ -115,6 +115,21 @@ img {
 	margin: 20px 20px;
 }
 
+.details-container {
+	display: grid;
+	grid-template-columns: repeat(3, 0.5fr);
+	grid-template-rows: 0.5fr;
+	gap: 40px;
+	margin: 20px 20px;
+}
+
+.details {
+	grid-column: 2/4;
+	font-family: "Fredericka the Great", cursive;
+	letter-spacing: 0.2rem;
+	line-height: 2.5rem;
+}
+
 div a {
 	display: flex;
 	flex-direction: column;
@@ -153,6 +168,7 @@ div a:hover {
 	font-family: "Fredericka the Great", cursive;
 	font-size: 2rem;
 	letter-spacing: 1rem;
+	line-height: 4rem;
 }
 
 .try-h2 {
@@ -164,4 +180,5 @@ footer {
 	justify-content: space-around;
 	font-family: "Rye", cursive;
 	letter-spacing: 0.5rem;
+	margin: 20px 0px 20px 0px;
 }
