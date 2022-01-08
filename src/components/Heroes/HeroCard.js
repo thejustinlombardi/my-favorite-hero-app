@@ -46,6 +46,13 @@ function HeroCard(props) {
 				<h4>First Appearance: {card.biography["first-appearance"]}</h4>
 				<h4>Publisher: {card.biography.publisher}</h4>
 				<h4>Group Affiliations: {card.connections["group-affiliation"]}</h4>
+				<a
+					className="learn-more"
+					target="_blank"
+					href={"https://www.superherodb.com/search/?q=" + card.name}
+					rel="noreferrer">
+					Learn More Here!
+				</a>
 			</div>
 		</div>
 	);

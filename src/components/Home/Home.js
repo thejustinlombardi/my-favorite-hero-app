@@ -1,14 +1,12 @@
 import React from "react";
 
+import "./Home.css";
+
 function Home(props) {
 	return (
 		<div className="home-container">
 			<div className="welcome-div">
 				<h2>Welcome, Heroes!</h2>
-				<h3>
-					This site is designed for all who are wanting more information on
-					their favorite heroes!
-				</h3>
 				<h3>Click the `HEROES` tab above and search for your favorite hero!</h3>
 			</div>
 
