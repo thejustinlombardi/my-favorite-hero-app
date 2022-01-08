@@ -21,12 +21,21 @@ function HeroCard(props) {
 			.catch(console.error);
 	}, []);
 
+	function handleImageError(event) {
+		event.currentTarget.src = "https://i.imgur.com/JNKyLlj.jpg";
+	}
+
 	if (!card) {
 		return <p>Loading Hero information ...</p>;
 	}
 	return (
 		<div className="details-container">
-			<img src={card.image.url} alt={card.name} className="info-card" />
+			<img
+				src={card.image.url}
+				alt={card.name}
+				className="info-card"
+				onError={handleImageError}
+			/>
 			<div className="details">
 				<h2>Name: {card.name}</h2>
 				<h3>Full Name: {card.biography["full-name"]}</h3>
@@ -37,7 +46,13 @@ function HeroCard(props) {
 				<h4>First Appearance: {card.biography["first-appearance"]}</h4>
 				<h4>Publisher: {card.biography.publisher}</h4>
 				<h4>Group Affiliations: {card.connections["group-affiliation"]}</h4>
-				<h4>Relatives: {card.connections.relatives}</h4>
+				<a
+					className="learn-more"
+					target="_blank"
+					href={"https://www.superherodb.com/search/?q=" + card.name}
+					rel="noreferrer">
+					Learn More Here!
+				</a>
 			</div>
 		</div>
 	);
