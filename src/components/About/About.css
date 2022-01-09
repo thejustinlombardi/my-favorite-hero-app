@@ -1,18 +1,37 @@
+.about-div {
+	margin: 30px;
+	font-family: "Fredericka the Great", cursive;
+	letter-spacing: 0.1rem;
+	line-height: 1.5rem;
+}
+.about-title {
+	text-align: center;
+	font-size: 2rem;
+	border: none;
+}
+.about-p {
+	text-align: center;
+	font-weight: bold;
+}
+
 @media (min-width: 600px) {
 	.about-div {
-		display: flex;
-		flex-direction: column;
-		margin: 5px;
+		margin: 30px;
 		font-family: "Fredericka the Great", cursive;
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.1rem;
 		line-height: 2.5rem;
 	}
 	.about-title {
 		text-align: center;
 		font-size: 2rem;
+		border: none;
 	}
 	.about-p {
 		text-align: center;
 		font-weight: bold;
+	}
+
+	.about-a {
+		border: none;
 	}
 }
