@@ -54,20 +54,29 @@ div a {
 	border: 1px solid white;
 	text-decoration: none;
 	color: white;
+	margin-bottom: 15px;
 }
 
 div a:hover {
 	cursor: pointer;
-
 	box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
 }
 
-footer {
+footer a {
+	text-decoration: none;
+	color: white;
+	background-color: transparent;
+	padding: 10px;
+	border: 2px solid white;
+}
+
+.app-footer {
 	display: flex;
 	justify-content: space-around;
 	font-family: "Rye", cursive;
 	letter-spacing: 0.5rem;
 	margin: 20px 0px 20px 0px;
+	padding: 30px 0px 10px 0px;
 }
 @media (min-width: 600px) {
 	* {
@@ -137,12 +146,21 @@ footer {
 		box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
 	}
 
-	footer {
+	footer a {
+		text-decoration: none;
+		color: white;
+		background-color: transparent;
+		padding: 10px;
+		border: 2px solid white;
+	}
+
+	.app-footer {
 		display: flex;
 		align-items: flex-end;
 		justify-content: space-around;
 		font-family: "Rye", cursive;
 		letter-spacing: 0.5rem;
 		margin: 20px 0px 20px 0px;
+		padding: 30px 0px 10px 0px;
 	}
 }

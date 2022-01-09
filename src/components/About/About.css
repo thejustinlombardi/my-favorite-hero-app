@@ -14,9 +14,17 @@
 	font-weight: bold;
 }
 
+.about-a {
+	border: none;
+}
+
+.about-a:hover {
+	box-shadow: none;
+}
+
 @media (min-width: 600px) {
 	.about-div {
-		margin: 30px;
+		margin: 50px;
 		font-family: "Fredericka the Great", cursive;
 		letter-spacing: 0.1rem;
 		line-height: 2.5rem;
@@ -33,5 +41,9 @@
 
 	.about-a {
 		border: none;
+	}
+
+	.about-a:hover {
+		box-shadow: none;
 	}
 }
