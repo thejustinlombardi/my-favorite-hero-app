@@ -61,3 +61,7 @@ First, I would like to continue to thank my instructors and classmates at GA for
 - memegenerator.net
 
 - https://www.codegrepper.com/code-examples/css/how+to+raise+image+when+hover
+
+- https://medium.com/@jenniferdobak/the-public-folder-and-favicons-in-create-react-app-8dc2cc1d492b
+
+- https://realfavicongenerator.net/
