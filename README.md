@@ -62,11 +62,11 @@ https://superheroapi.com/
 
 ### Unsolved Problems / Major Hurdles
 
-- This was my first encounter with a bigger application using third-party APIs so that was interesting getting used to. The hurdles that I was facing in the beginning with the images not showing and 503 errors was a great learning experience for me and a good challenge to find new solutions. With that being said, these problems have been fixed and addressed.
+> This was my first encounter with a bigger application using third-party APIs so that was interesting getting used to. The hurdles that I was facing in the beginning with the images not showing and 503 errors was a great learning experience for me and a good challenge to find new solutions. With that being said, these problems have been fixed and addressed.
 
 ### Attributes/Thank You
 
-First, I would like to continue to thank my instructors and classmates at GA for all of their input and guidance. For my first React App, I'm very happy to see my idea come to fruition! I also want to thank my fiancé for continuing to be my 'Rubberduck' while I worked through this! 'Til next time!
+> First, I would like to continue to thank my instructors and classmates at GA for all of their input and guidance. For my first React App, I'm very happy to see my idea come to fruition! I also want to thank my fiancé for continuing to be my 'Rubberduck' while I worked through this! 'Til next time!
 
 **Reference List:**
 

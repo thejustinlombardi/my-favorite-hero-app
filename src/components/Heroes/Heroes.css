@@ -1,3 +1,4 @@
+/* HERO SEARCH FORM component  */
 .form-horizontal {
 	display: flex;
 	flex-direction: row;
@@ -24,11 +25,14 @@
 	letter-spacing: 0.25rem;
 }
 
+/* ALL IMAGES */
 img {
 	object-fit: fill;
 	width: 100%;
 	height: 100%;
 }
+
+/* RANDOM HERO component  */
 .random-hero-card {
 	display: grid;
 	grid-column: 2;
@@ -59,6 +63,7 @@ img {
 	width: 200px;
 }
 
+/* HERO LIST/VIEWER/DETAILS components  */
 .hero-card {
 	display: flex;
 	flex-direction: column;
@@ -70,6 +75,18 @@ img {
 	width: 200px;
 }
 
+.try-h2,
+.last-search {
+	text-align: center;
+	font-family: "Fredericka the Great", cursive;
+	letter-spacing: 0.2rem;
+}
+
+.last-search {
+	opacity: 0.75;
+}
+
+/* HERO CARD component  */
 .details-container {
 	display: grid;
 	grid-template-columns: 100px 0.8fr 30px;
@@ -101,49 +118,14 @@ img {
 	padding: 10px;
 }
 
-.try-h2,
-.last-search {
-	text-align: center;
-	font-family: "Fredericka the Great", cursive;
-	letter-spacing: 0.2rem;
-}
-
-.last-search {
-	opacity: 0.75;
-}
+/* PAGE NOT FOUND component  */
 
 .not-found-img {
 	width: 200px;
 }
 
 @media (min-width: 850px) {
-	.random-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.random-button {
-		grid-row: 1;
-		grid-column: 2;
-		margin-left: 5px;
-		padding: 20px;
-		font-size: 1rem;
-		color: white;
-		font-family: "Rye", cursive;
-		background-color: black;
-		letter-spacing: 0.25rem;
-		width: 300px;
-	}
-
-	.random-hero-card {
-		display: grid;
-		grid-column: 2;
-		grid-row: 2;
-		margin: 20px 20px;
-	}
-
+	/* HERO SEARCH FORM component  */
 	.form-horizontal {
 		display: flex;
 		flex-direction: row;
@@ -170,11 +152,50 @@ img {
 		letter-spacing: 0.25rem;
 	}
 
+	/* ALL IMAGES */
+
 	img {
 		object-fit: fill;
 		width: 100%;
 		height: 100%;
 	}
+
+	/* RANDOM HERO component  */
+
+	.random-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.random-button {
+		grid-row: 1;
+		grid-column: 2;
+		margin-left: 5px;
+		padding: 20px;
+		font-size: 1.5rem;
+		color: white;
+		font-family: "Rye", cursive;
+		font-weight: bold;
+		background-color: black;
+		letter-spacing: 0.25rem;
+		width: 300px;
+	}
+
+	.random-hero-card {
+		display: grid;
+		grid-column: 2;
+		grid-row: 2;
+		margin: 20px 20px;
+	}
+
+	.random-card-img {
+		width: 400px;
+		height: 600px;
+	}
+
+	/* HERO LIST/VIEWER/DETAILS components  */
 
 	.hero-card {
 		display: grid;
@@ -182,30 +203,6 @@ img {
 		grid-template-rows: 0.5fr;
 		gap: 40px;
 		margin: 20px 20px;
-	}
-
-	.details-container {
-		display: flex;
-		flex-direction: row;
-		gap: 20px;
-		margin: 20px 20px;
-		border: 1px solid white;
-	}
-
-	.details {
-		font-family: "Fredericka the Great", cursive;
-		letter-spacing: 0.2rem;
-		line-height: 1.75rem;
-	}
-
-	.info-card {
-		width: 400px;
-		height: 600px;
-		border: 1px solid white;
-	}
-
-	.card-title {
-		font-family: "Rye", cursive;
 	}
 
 	.try-h2,
@@ -233,11 +230,33 @@ img {
 		box-shadow: none;
 	}
 
-	.random-card-img {
-		width: 400px;
-		height: 600px;
+	/* HERO CARD component  */
+
+	.details-container {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		margin: 20px 20px;
+		border: 1px solid white;
 	}
 
+	.details {
+		font-family: "Fredericka the Great", cursive;
+		letter-spacing: 0.2rem;
+		line-height: 1.75rem;
+	}
+
+	.info-card {
+		width: 400px;
+		height: 600px;
+		border: 1px solid white;
+	}
+
+	.card-title {
+		font-family: "Rye", cursive;
+	}
+
+	/* PAGE NOT FOUND component  */
 	.not-found-img {
 		width: 700px;
 		height: 500px;

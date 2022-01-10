@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+// This component handles all data for the individual hero card information
+
 function HeroCard(props) {
 	const [card, setCard] = useState(null);
 	const { id } = useParams();
@@ -28,6 +30,7 @@ function HeroCard(props) {
 	if (!card) {
 		return <p>Loading Hero information ...</p>;
 	}
+
 	return (
 		<div className="details-container">
 			<img

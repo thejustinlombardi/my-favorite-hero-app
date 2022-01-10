@@ -1,5 +1,7 @@
 import React from "react";
 
+// This component handles all text and images for the Home component
+
 import "./Home.css";
 
 function Home(props) {

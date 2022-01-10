@@ -15,6 +15,7 @@ import "./components/Heroes/Heroes.css";
 function App() {
 	return (
 		<div className="app-container">
+			{/* Header is the sites navigation */}
 			<header className="app-header">
 				<h1>My Favorite Hero</h1>
 				<nav className="app-nav">
@@ -24,7 +25,7 @@ function App() {
 					<Link to="about">About</Link>
 				</nav>
 			</header>
-
+			{/* main represents all routes*/}
 			<main className="app-main">
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -35,11 +36,15 @@ function App() {
 					<Route path="heroes/:id" element={<HeroCard />} />
 					<Route path="about" element={<About />} />
 					<Route path="about/easter-egg" element={<EasterEgg />} />
-					<Route path="*" element={<PageNotFound />} />
+					<Route path="/*" element={<PageNotFound />} />
 				</Routes>
 			</main>
+			{/* Footer contains linkedin profile */}
 			<footer className="app-footer">
-				<a href="https://www.linkedin.com/in/justin-lombardi-creates/">
+				<a
+					href="https://www.linkedin.com/in/justin-lombardi-creates/"
+					target="_blank"
+					rel="noreferrer">
 					LinkedIn
 				</a>
 			</footer>

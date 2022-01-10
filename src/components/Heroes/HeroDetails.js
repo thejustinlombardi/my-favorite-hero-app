@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// This component handles all of the information for the search result cards
+
 function HeroDetails({ hero }) {
 	function handleImageError(event) {
 		event.currentTarget.src = "https://i.imgur.com/JNKyLlj.jpg";
