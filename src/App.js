@@ -6,6 +6,7 @@ import HeroCard from "./components/Heroes/HeroCard";
 import RandomHero from "./components/Heroes/RandomHero";
 import HeroSearchForm from "./components/Heroes/HeroSearchForm";
 import About from "./components/About/About";
+import EasterEgg from "./components/Heroes/EasterEgg";
 
 import "./App.css";
 import "./components/Heroes/Heroes.css";
@@ -31,13 +32,13 @@ function App() {
 					<Route path="random-hero" element={<RandomHero />} />
 					<Route path="heroes/:id" element={<HeroCard />} />
 					<Route path="about" element={<About />} />
+					<Route path="about/easter-egg" element={<EasterEgg />} />
 				</Routes>
 			</main>
 			<footer className="app-footer">
 				<a href="https://www.linkedin.com/in/justin-lombardi-creates/">
 					LinkedIn
 				</a>
-				<a href="thejustinlombardi@gmail.com">Gmail</a>
 			</footer>
 		</div>
 	);

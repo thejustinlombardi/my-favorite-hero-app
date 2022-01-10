@@ -10,7 +10,10 @@ function HeroViewer(props) {
 			{hero ? (
 				<HeroDetails hero={hero} />
 			) : (
-				<h2 className="try-h2">Enter your Hero above!</h2>
+				<div>
+					{/* <h2 className="try-h2">Sorry! Hero not found. Please try again.</h2> */}
+					<h2 className="try-h2">Enter your Hero above!</h2>
+				</div>
 			)}
 		</div>
 	);

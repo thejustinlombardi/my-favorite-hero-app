@@ -5,7 +5,7 @@ function HeroSearchForm({ handleChange, handleSubmit, searchHero }) {
 		<form onSubmit={handleSubmit} className="form-horizontal">
 			<input
 				placeholder="Search Hero"
-				type="text"
+				type="type"
 				name="searchHero"
 				required
 				onChange={handleChange}

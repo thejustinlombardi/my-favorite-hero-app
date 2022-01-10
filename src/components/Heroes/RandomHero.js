@@ -47,7 +47,7 @@ function RandomHero(props) {
 						<img
 							src={heroes.image?.url}
 							alt={heroes.name}
-							className="card-img"
+							className="random-card-img"
 							onError={handleImageError}
 						/>
 						<h2 className="card-title">{heroes.name}</h2>
