@@ -20,7 +20,7 @@ function HeroCard(props) {
 			.then((json) => {
 				setCard(json);
 			})
-			.catch(console.error);
+			.catch();
 	}, []);
 
 	function handleImageError(event) {
