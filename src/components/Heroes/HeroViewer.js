@@ -1,5 +1,7 @@
 import React from "react";
 
+// This handles the rendering of the HeroDetails
+
 import HeroDetails from "./HeroDetails";
 
 function HeroViewer(props) {

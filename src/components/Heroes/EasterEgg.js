@@ -1,5 +1,5 @@
 import React from "react";
-
+// This is all of the info for the developer 'hero' card
 function EasterEgg(props) {
 	return (
 		<div className="details-container">

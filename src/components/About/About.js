@@ -21,13 +21,13 @@ function About(props) {
 				</p>
 				<p>
 					Special thanks to:
-					<a className="about-a" href="superheroapi.com">
+					<a className="about-a" href="superheroapi.com" target="_blank">
 						superheroapi.com
 					</a>
-					<a className="about-a" href="superherodb.com">
+					<a className="about-a" href="superherodb.com" target="_blank">
 						superherodb.com
 					</a>
-					<a className="about-a" href="memegenerator.net">
+					<a className="about-a" href="memegenerator.net" target="_blank">
 						memegenerator.net
 					</a>
 					This project is possible because of their incredible databases. Also,

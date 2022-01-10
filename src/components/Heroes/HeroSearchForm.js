@@ -1,5 +1,7 @@
 import React from "react";
 
+// This component handles the search field for the Hero List component
+
 function HeroSearchForm({ handleChange, handleSubmit, searchHero }) {
 	return (
 		<form onSubmit={handleSubmit} className="form-horizontal">

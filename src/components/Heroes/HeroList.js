@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import HeroSearchForm from "./HeroSearchForm";
 import HeroViewer from "./HeroViewer";
 
+// This component handles the hooks, storing of search data, and distribution of API data for the Hero Viewer
+
 function HeroList(props) {
 	const searchOptions = {
 		token: process.env.REACT_APP_HERO_TOKEN,
