@@ -21,7 +21,7 @@ function RandomHero(props) {
 			.then((json) => {
 				setHeroes(json);
 			})
-			.catch(console.error);
+			.catch();
 	}
 	function getRandomNumber(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
