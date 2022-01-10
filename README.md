@@ -1,18 +1,28 @@
 ## **My Favorite Hero**
 
-![My Favorite Hero](./assets/MFH-Screenshot.png)
+## App Screenshots
+
+![My Favorite Hero](./src/assets/MFH-Screenshot.png)
+
+## API Used
+
+https://superheroapi.com/
 
 ## Technologies Used
 
 - React
 - CSS
+- JavaScript
 - Netlify
-- imgur
+- imgur.com
 
 ## Installation
 
 1. Fork and clone down the repository to your machine.
-2. Run `npm start`
+2. cd into the repo
+3. Open in VScode by running `code .` in your terminal
+4. Run `npm i` in your terminal
+5. Run `npm start` in your terminal
 
 ## User Stories
 
@@ -23,21 +33,16 @@
 - As a user, I want my site to have a crisp, clean aesthetic so that it allows easy navigation between the different components.
 - As a user, I want my site to be able to display the images of the heroes so I have a visual reference for them.
 
-### Bronze
+### Stretch Goals
 
-- As a user, I want my site to be able to generate a random hero so they can learn about heroes they may have never heard of.
+- As a user, I want my site to be able to generate a random hero so I can learn about heroes they may have never heard of.
 
-### Silver
-
-- As a user, I would like to have an option of where I can find comics/games/movies based on a specific hero.
-
-### Gold
-
-- As a user, I would like to incorporate some theme music that I could stop and start so I can feel like a super hero as I'm browsing super heroes!
+- As a user, I would like to have an option of where I can learn more on a specific hero so I can access more information.
 
 ## Wire Frames
 
-> ![MFH-Wireframe-HomePage]('./src/assets/MFH_WireFrame_HomePage.png') > ![MFH-Wireframe-HeroPage]('./src/assets/MFH_WireFrame_HeroPage.png')
+![MFH_WireFrame_HomePage](./src/assets/MFH_WireFrame_HomePage.png)
+![MFH_WireFrame_HeroPage](./src/assets/MFH_WireFrame_HeroPage.png)
 
 ### Unsolved Problems / Major Hurdles
 

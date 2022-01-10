@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import HeroSearchForm from "./HeroSearchForm";
 import HeroViewer from "./HeroViewer";
@@ -14,17 +14,25 @@ function HeroList(props) {
 
 	const [hero, setHero] = useState([]);
 
-	useEffect(() => {
-		getHero(searchHero);
-	}, []);
+	const [notFound, setNotFound] = useState(false);
 
 	function getHero(searchHero) {
 		const url = `${searchOptions.api}${searchOptions.token}${searchOptions.endpoint}${searchHero}`;
+		setNotFound(false);
+		setHero([]);
+
 		fetch(url)
-			.then((res) => res.json())
+			.then((res) => {
+				return res.json();
+			})
 
 			.then((json) => {
-				setHero(json.results);
+				if (json.response === "error") {
+					setHero([]);
+					setNotFound(true);
+				} else {
+					setHero(json.results);
+				}
 			})
 			.catch(console.error);
 	}
@@ -45,7 +53,8 @@ function HeroList(props) {
 				handleSubmit={handleSubmit}
 				searchHero={searchHero}
 			/>
-			<HeroViewer hero={hero} />
+
+			<HeroViewer hero={hero} notFound={notFound} />
 		</div>
 	);
 }
