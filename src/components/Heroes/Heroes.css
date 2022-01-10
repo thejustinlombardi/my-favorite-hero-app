@@ -39,6 +39,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .random-button {
@@ -49,6 +50,9 @@ img {
 	color: white;
 	font-family: "Rye", cursive;
 	background-color: black;
+	width: 100px;
+	padding: 5px;
+	margin-bottom: 10px;
 }
 
 .random-card-img {
@@ -59,7 +63,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 10px 10px 0px 10px;
+	margin: 10px 5px 0px 5px;
 }
 
 .card-img {
@@ -103,11 +107,12 @@ img {
 	letter-spacing: 0.2rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 850px) {
 	.random-container {
-		display: grid;
-		grid-template-rows: 50px 0.5fr;
-		grid-template-columns: repeat(3, 0.5fr);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.random-button {
@@ -120,6 +125,7 @@ img {
 		font-family: "Rye", cursive;
 		background-color: black;
 		letter-spacing: 0.25rem;
+		width: 300px;
 	}
 
 	.random-hero-card {
@@ -200,7 +206,7 @@ img {
 	}
 
 	.learn-more {
-		width: 400px;
+		width: 300px;
 		font-weight: bold;
 		font-size: 150%;
 		border-radius: 5px;
@@ -210,5 +216,10 @@ img {
 
 	.learn-more:hover {
 		box-shadow: none;
+	}
+
+	.random-card-img {
+		width: 400px;
+		height: 600px;
 	}
 }

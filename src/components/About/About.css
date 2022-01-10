@@ -18,10 +18,6 @@
 	border: none;
 }
 
-.about-a:hover {
-	box-shadow: none;
-}
-
 @media (min-width: 600px) {
 	.about-div {
 		margin: 50px;
