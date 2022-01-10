@@ -112,6 +112,10 @@ img {
 	opacity: 0.75;
 }
 
+.not-found-img {
+	width: 200px;
+}
+
 @media (min-width: 850px) {
 	.random-container {
 		display: flex;
@@ -232,5 +236,10 @@ img {
 	.random-card-img {
 		width: 400px;
 		height: 600px;
+	}
+
+	.not-found-img {
+		width: 700px;
+		height: 500px;
 	}
 }

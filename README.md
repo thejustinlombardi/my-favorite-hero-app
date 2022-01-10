@@ -1,8 +1,14 @@
-## **My Favorite Hero**
+# **My Favorite Hero**
+
+My Favorite Hero is a place where fellow heroes can come and explore
+700+ superheroes! Have you always wanted to know Venom's real name?
+Ever wanted to know how much Thanos weighs? You can find that all out
+here! Give it a try!
 
 ## App Screenshots
 
 ![My Favorite Hero](./src/assets/MFH-Screenshot.png)
+![My Favorite Hero 2](./src/assets/MFH-Screenshot-2.png)
 
 ## API Used
 
@@ -21,8 +27,18 @@ https://superheroapi.com/
 1. Fork and clone down the repository to your machine.
 2. cd into the repo
 3. Open in VScode by running `code .` in your terminal
-4. Run `npm i` in your terminal
+4. Run `npm i` or `npm install` in your terminal
 5. Run `npm start` in your terminal
+
+## Contribution Guidelines
+
+### How to contribute
+
+> Anyone is welcome to contribute to this app! I want to continue to improve this site and make new features as I learn more. If you would like to contribute, follow the installation instructions, checkout a dev branch, and try some things out! After you're done, submit a pull request.
+
+### How to identify bugs
+
+> If you identify bugs, submit an issue on the Git repo. Please detail the bug in your issue. If you know how to fix it, feel free to note the methods you would use. You could also submit a pull request with suggested code to fix it.
 
 ## User Stories
 
@@ -54,11 +70,11 @@ First, I would like to continue to thank my instructors and classmates at GA for
 
 **Reference List:**
 
-- superherodb.com
+- https://www.superherodb.com/
 
-- superheroapi.com
+- https://superheroapi.com/
 
-- memegenerator.net
+- https://memegenerator.net/
 
 - https://www.codegrepper.com/code-examples/css/how+to+raise+image+when+hover
 
