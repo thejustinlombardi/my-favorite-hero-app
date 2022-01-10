@@ -7,6 +7,7 @@ import RandomHero from "./components/Heroes/RandomHero";
 import HeroSearchForm from "./components/Heroes/HeroSearchForm";
 import About from "./components/About/About";
 import EasterEgg from "./components/Heroes/EasterEgg";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 import "./App.css";
 import "./components/Heroes/Heroes.css";
@@ -29,10 +30,12 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="heroes" element={<HeroList />} />
 					<Route path="heroes" element={<HeroSearchForm />} />
+					<Route path="/hero" element={<Navigate to="/heroes" />} />
 					<Route path="random-hero" element={<RandomHero />} />
 					<Route path="heroes/:id" element={<HeroCard />} />
 					<Route path="about" element={<About />} />
 					<Route path="about/easter-egg" element={<EasterEgg />} />
+					<Route path="*" element={<PageNotFound />} />
 				</Routes>
 			</main>
 			<footer className="app-footer">

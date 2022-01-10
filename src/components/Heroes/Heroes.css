@@ -101,10 +101,15 @@ img {
 	padding: 10px;
 }
 
-.try-h2 {
+.try-h2,
+.last-search {
 	text-align: center;
 	font-family: "Fredericka the Great", cursive;
 	letter-spacing: 0.2rem;
+}
+
+.last-search {
+	opacity: 0.75;
 }
 
 @media (min-width: 850px) {
@@ -199,10 +204,16 @@ img {
 		font-family: "Rye", cursive;
 	}
 
-	.try-h2 {
+	.try-h2,
+	.last-search {
 		text-align: center;
 		font-family: "Fredericka the Great", cursive;
 		letter-spacing: 0.2rem;
+		padding-bottom: 10px;
+	}
+
+	.last-search {
+		opacity: 0.75;
 	}
 
 	.learn-more {
