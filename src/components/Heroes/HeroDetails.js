@@ -5,6 +5,10 @@ function HeroDetails({ hero }) {
 	function handleImageError(event) {
 		event.currentTarget.src = "https://i.imgur.com/JNKyLlj.jpg";
 	}
+
+	if (!hero.image) {
+		<p>Loading Hero...</p>;
+	}
 	return (
 		<div className="hero-card">
 			{hero.map((hero) => {

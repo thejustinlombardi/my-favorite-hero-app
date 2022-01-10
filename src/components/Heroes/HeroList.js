@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import HeroSearchForm from "./HeroSearchForm";
 import HeroViewer from "./HeroViewer";
@@ -14,19 +14,36 @@ function HeroList(props) {
 
 	const [hero, setHero] = useState([]);
 
-	useEffect(() => {
-		getHero(searchHero);
-	}, []);
+	const [notFound, setNotFound] = useState(false);
+
+	const [loading, setLoading] = useState(true);
+
+	const [lastSearch, setLastSearch] = useState("");
 
 	function getHero(searchHero) {
 		const url = `${searchOptions.api}${searchOptions.token}${searchOptions.endpoint}${searchHero}`;
+
+		setHero([]);
+
 		fetch(url)
-			.then((res) => res.json())
+			.then((res) => {
+				return res.json();
+			})
 
 			.then((json) => {
-				setHero(json.results);
+				if (json.response === "error") {
+					setHero([]);
+					setNotFound(true);
+					setLoading(false);
+					setLastSearch(searchHero);
+				} else {
+					setHero(json.results);
+					setNotFound(false);
+					setLoading(false);
+					setLastSearch(searchHero);
+				}
 			})
-			.catch(console.error);
+			.catch((error) => {});
 	}
 
 	function handleChange(e) {
@@ -45,7 +62,25 @@ function HeroList(props) {
 				handleSubmit={handleSubmit}
 				searchHero={searchHero}
 			/>
-			<HeroViewer hero={hero} />
+			{lastSearch ? (
+				<h3 className="last-search">
+					<em>Showing results for: </em>
+					<strong>{lastSearch}</strong>
+				</h3>
+			) : (
+				""
+			)}
+			{hero === "" || loading ? (
+				<h2 className="try-h2">Enter Your Hero Above!</h2>
+			) : (
+				""
+			)}
+
+			{notFound ? (
+				<h2 className="try-h2">Sorry! Hero not found. Please try again.</h2>
+			) : (
+				<HeroViewer hero={hero} notFound={notFound} />
+			)}
 		</div>
 	);
 }
