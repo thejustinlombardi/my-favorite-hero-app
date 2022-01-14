@@ -1,12 +1,12 @@
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 
 import Home from "./components/Home/Home";
-import HeroList from "./components/Heroes/HeroList";
+import HeroMain from "./components/Heroes/HeroSearch/HeroMain";
 import HeroCard from "./components/Heroes/HeroCard";
 import RandomHero from "./components/Heroes/RandomHero";
-import HeroSearchForm from "./components/Heroes/HeroSearchForm";
+import HeroSearchForm from "./components/Heroes/HeroSearch/HeroSearchForm";
 import About from "./components/About/About";
-import EasterEgg from "./components/Heroes/EasterEgg";
+import EasterEgg from "./components/About/EasterEgg";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 import "./App.css";
@@ -29,7 +29,7 @@ function App() {
 			<main className="app-main">
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="heroes" element={<HeroList />} />
+					<Route path="heroes" element={<HeroMain />} />
 					<Route path="heroes" element={<HeroSearchForm />} />
 					<Route path="/hero" element={<Navigate to="/heroes" />} />
 					<Route path="random-hero" element={<RandomHero />} />

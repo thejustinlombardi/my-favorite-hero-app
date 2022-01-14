@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 // This component handles all of the information for the search result cards
 
-function HeroDetails({ hero }) {
+function HeroResults({ hero }) {
 	function handleImageError(event) {
 		event.currentTarget.src = "https://i.imgur.com/JNKyLlj.jpg";
 	}
@@ -30,4 +30,4 @@ function HeroDetails({ hero }) {
 	);
 }
 
-export default HeroDetails;
+export default HeroResults;
