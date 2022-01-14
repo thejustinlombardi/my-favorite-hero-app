@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 // This component handles all data for the individual hero card information
 
 function HeroCard(props) {
 	const [card, setCard] = useState(null);
 	const { id } = useParams();
+	const navigation = useNavigate();
 
 	const searchOptions = {
 		token: process.env.REACT_APP_HERO_TOKEN,
@@ -18,7 +19,11 @@ function HeroCard(props) {
 			.then((res) => res.json())
 
 			.then((json) => {
-				setCard(json);
+				if (json.response === "error") {
+					navigation("/page-not-found");
+				} else {
+					setCard(json);
+				}
 			})
 			.catch();
 	}, []);

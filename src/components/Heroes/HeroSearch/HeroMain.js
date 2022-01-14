@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 import HeroSearchForm from "./HeroSearchForm";
-import HeroViewer from "./HeroViewer";
+import HeroResults from "./HeroResults";
 
 // This component handles the hooks, storing of search data, and distribution of API data for the Hero Viewer
 
-function HeroList(props) {
+function HeroMain(props) {
 	const searchOptions = {
 		token: process.env.REACT_APP_HERO_TOKEN,
 		api: "https://superheroapi.com/api.php/",
@@ -81,10 +81,10 @@ function HeroList(props) {
 			{notFound ? (
 				<h2 className="try-h2">Sorry! Hero not found. Please try again.</h2>
 			) : (
-				<HeroViewer hero={hero} notFound={notFound} />
+				<HeroResults hero={hero} />
 			)}
 		</div>
 	);
 }
 
-export default HeroList;
+export default HeroMain;
