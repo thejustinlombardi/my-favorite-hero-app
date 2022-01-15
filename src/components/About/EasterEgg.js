@@ -4,7 +4,7 @@ function EasterEgg(props) {
 	return (
 		<div className="details-container">
 			<img
-				src="https://i.imgur.com/C4vE4JT.png"
+				src="https://i.imgur.com/sTG3UGN.jpg"
 				alt="author"
 				className="info-card"
 			/>
