@@ -41,11 +41,23 @@ function App() {
 			</main>
 			{/* Footer contains linkedin profile */}
 			<footer className="app-footer">
-				<a
-					href="https://www.linkedin.com/in/justin-lombardi-creates/"
-					target="_blank"
-					rel="noreferrer">
-					LinkedIn
+				<a href="https://linkedin.com/in/justin-lombardi" target="blank">
+					<img
+						align="center"
+						src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+						alt="justin-lombardi"
+						height="30"
+						width="40"
+					/>
+				</a>
+				<a href="https://github.com/thejustinlombardi" target="blank">
+					<img
+						align="center"
+						src="https://i.imgur.com/xwOFfCj.png"
+						alt="justin-lombardi"
+						height="30"
+						width="40"
+					/>
 				</a>
 			</footer>
 		</div>
