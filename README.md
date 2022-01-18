@@ -7,8 +7,8 @@ here! Give it a try!
 
 ## App Screenshots
 
-![My Favorite Hero](./src/assets/MFH-Screenshot.png)
-![My Favorite Hero 2](./src/assets/MFH-Screenshot-2.png)
+![My Favorite Hero](./planning/MFH-Screenshot.png)
+![My Favorite Hero 2](./planning/MFH-Screenshot-2.png)
 
 ## API Used
 
@@ -57,8 +57,8 @@ https://superheroapi.com/
 
 ## Wire Frames
 
-![MFH_WireFrame_HomePage](./src/assets/MFH_WireFrame_HomePage.png)
-![MFH_WireFrame_HeroPage](./src/assets/MFH_WireFrame_HeroPage.png)
+![MFH_WireFrame_HomePage](./planning/MFH_WireFrame_HomePage.png)
+![MFH_WireFrame_HeroPage](./planning/MFH_WireFrame_HeroPage.png)
 
 ### Unsolved Problems / Major Hurdles
 

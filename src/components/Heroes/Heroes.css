@@ -27,6 +27,11 @@
 	border-radius: 5px;
 }
 
+.label {
+	font-family: "Rye", cursive;
+	font-size: 1.5rem;
+}
+
 /* ALL IMAGES */
 img {
 	object-fit: fill;
@@ -89,6 +94,15 @@ img {
 
 .last-search {
 	opacity: 0.75;
+}
+
+.italic-result {
+	font-style: italic;
+}
+
+.bold-result {
+	font-weight: bolder;
+	font-size: 1.5rem;
 }
 
 /* HERO CARD component  */
@@ -160,6 +174,11 @@ img {
 		border-radius: 5px;
 	}
 
+	.label {
+		font-family: "Rye", cursive;
+		font-size: 2rem;
+	}
+
 	/* ALL IMAGES */
 
 	img {
@@ -226,6 +245,15 @@ img {
 
 	.last-search {
 		opacity: 0.75;
+	}
+
+	.italic-result {
+		font-style: italic;
+	}
+
+	.bold-result {
+		font-weight: bolder;
+		font-size: 1.5rem;
 	}
 
 	.learn-more {

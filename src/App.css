@@ -22,6 +22,8 @@ h1 {
 
 .app-container {
 	color: white;
+	margin-bottom: -50px;
+	height: 100vh;
 }
 
 .app-nav {
@@ -63,7 +65,7 @@ footer a {
 	height: 40px;
 	width: 40px;
 	padding: 5px;
-	margin: 0px 10px 0px 10px;
+	margin: 50px 10px 0px 10px;
 }
 
 .app-footer {
@@ -72,9 +74,10 @@ footer a {
 	justify-content: center;
 	font-family: "Rye", cursive;
 	letter-spacing: 0.5rem;
-	margin: 20px 0px 20px 0px;
+
 	padding: 30px 0px 0px 0px;
 }
+
 @media (min-width: 600px) {
 	/* APP component */
 	* {
@@ -100,6 +103,8 @@ footer a {
 
 	.app-container {
 		color: white;
+		margin-bottom: -50px;
+		min-height: 100%;
 	}
 
 	.app-nav {
@@ -162,5 +167,6 @@ footer a {
 		font-family: "Rye", cursive;
 		margin: 20px 0px 10px 0px;
 		padding: 30px 0px 0px 0px;
+		height: 50px;
 	}
 }

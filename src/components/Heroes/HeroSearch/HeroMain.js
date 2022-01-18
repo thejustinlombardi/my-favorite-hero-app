@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 import HeroSearchForm from "./HeroSearchForm";
 import HeroResults from "./HeroResults";
@@ -21,6 +22,8 @@ function HeroMain(props) {
 	const [loading, setLoading] = useState(true);
 
 	const [lastSearch, setLastSearch] = useState("");
+
+	let [searchParams, setSearchParams] = useSearchParams();
 
 	function getHero(searchHero) {
 		const url = `${searchOptions.api}${searchOptions.token}${searchOptions.endpoint}${searchHero}`;
@@ -45,7 +48,14 @@ function HeroMain(props) {
 					setLastSearch(searchHero);
 				}
 			})
-			.catch((error) => {});
+			.catch((error) => {
+				if (error) {
+					setHero([]);
+					setNotFound(true);
+					setLoading(false);
+					setLastSearch(searchHero);
+				}
+			});
 	}
 
 	function handleChange(e) {
@@ -54,6 +64,7 @@ function HeroMain(props) {
 
 	function handleSubmit(e) {
 		e.preventDefault();
+		setSearchParams({ heroes: searchHero });
 		getHero(searchHero);
 	}
 
@@ -64,19 +75,14 @@ function HeroMain(props) {
 				handleSubmit={handleSubmit}
 				searchHero={searchHero}
 			/>
-			{lastSearch ? (
+			{lastSearch && (
 				<h3 className="last-search">
-					<em>Showing results for: </em>
-					<strong>{lastSearch}</strong>
+					<span className="italic-result">Showing results for: </span>
+					<span className="bold-result">{lastSearch}</span>
 				</h3>
-			) : (
-				""
 			)}
-			{hero === "" || loading ? (
-				<h2 className="try-h2">Enter Your Hero Above!</h2>
-			) : (
-				""
-			)}
+			{hero === "" ||
+				(loading && <h2 className="try-h2">Enter Your Hero Above!</h2>)}
 
 			{notFound ? (
 				<h2 className="try-h2">Sorry! Hero not found. Please try again.</h2>
