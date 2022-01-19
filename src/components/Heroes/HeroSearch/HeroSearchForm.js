@@ -5,9 +5,10 @@ import React from "react";
 function HeroSearchForm({ handleChange, handleSubmit, searchHero }) {
 	return (
 		<form onSubmit={handleSubmit} className="form-horizontal">
+			<label htmlFor="searchHero" className="label"></label>
 			<input
 				placeholder="Search Hero"
-				type="type"
+				type="text"
 				name="searchHero"
 				required
 				onChange={handleChange}

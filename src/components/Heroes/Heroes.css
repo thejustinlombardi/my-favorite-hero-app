@@ -27,6 +27,11 @@
 	border-radius: 5px;
 }
 
+.label {
+	font-family: "Rye", cursive;
+	font-size: 1.5rem;
+}
+
 /* ALL IMAGES */
 img {
 	object-fit: fill;
@@ -59,12 +64,12 @@ img {
 	background-color: black;
 	width: 100px;
 	padding: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	border-radius: 5px;
 }
 
 .random-card-img {
-	width: 200px;
+	width: 300px;
 }
 
 /* HERO LIST/VIEWER/DETAILS components  */
@@ -87,8 +92,21 @@ img {
 	letter-spacing: 0.2rem;
 }
 
+.search-container {
+	min-height: 60vh;
+}
+
 .last-search {
 	opacity: 0.75;
+}
+
+.italic-result {
+	font-style: italic;
+}
+
+.bold-result {
+	font-weight: bolder;
+	font-size: 1.5rem;
 }
 
 /* HERO CARD component  */
@@ -160,6 +178,11 @@ img {
 		border-radius: 5px;
 	}
 
+	.label {
+		font-family: "Rye", cursive;
+		font-size: 2rem;
+	}
+
 	/* ALL IMAGES */
 
 	img {
@@ -224,8 +247,21 @@ img {
 		padding-bottom: 10px;
 	}
 
+	.search-container {
+		min-height: 90vh;
+	}
+
 	.last-search {
 		opacity: 0.75;
+	}
+
+	.italic-result {
+		font-style: italic;
+	}
+
+	.bold-result {
+		font-weight: bolder;
+		font-size: 1.5rem;
 	}
 
 	.learn-more {
