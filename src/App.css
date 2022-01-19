@@ -9,7 +9,7 @@ html {
 
 h1 {
 	font-family: "Fredericka the Great", cursive;
-	font-size: 3rem;
+	font-size: 2rem;
 	letter-spacing: 1rem;
 	text-align: center;
 }
@@ -22,8 +22,8 @@ h1 {
 
 .app-container {
 	color: white;
-	margin-bottom: -50px;
-	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .app-nav {
@@ -33,7 +33,7 @@ h1 {
 	justify-content: space-evenly;
 	font-family: "Rye", cursive;
 	padding: 10px 0px 10px 0px;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 nav a {
@@ -74,8 +74,6 @@ footer a {
 	justify-content: center;
 	font-family: "Rye", cursive;
 	letter-spacing: 0.5rem;
-
-	padding: 30px 0px 0px 0px;
 }
 
 @media (min-width: 600px) {
@@ -103,8 +101,6 @@ footer a {
 
 	.app-container {
 		color: white;
-		margin-bottom: -50px;
-		min-height: 100%;
 	}
 
 	.app-nav {
@@ -155,7 +151,6 @@ footer a {
 		background-color: transparent;
 		border: 2px solid white;
 		padding: 5px;
-		margin: 0px 10px 0px 10px;
 		height: 60px;
 		width: 60px;
 	}
@@ -165,8 +160,5 @@ footer a {
 		flex-direction: row;
 		justify-content: center;
 		font-family: "Rye", cursive;
-		margin: 20px 0px 10px 0px;
-		padding: 30px 0px 0px 0px;
-		height: 50px;
 	}
 }
