@@ -215,6 +215,11 @@ img {
 		border-radius: 5px;
 	}
 
+	.random-button:hover {
+		box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
+		transform: scale(1.1);
+	}
+
 	.random-hero-card {
 		display: grid;
 		grid-column: 2;
@@ -237,6 +242,10 @@ img {
 		gap: 40px;
 		margin: 20px 20px;
 		border-radius: 5px;
+	}
+
+	.card-img {
+		width: 250px;
 	}
 
 	.try-h2,
