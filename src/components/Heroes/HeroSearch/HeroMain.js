@@ -70,7 +70,6 @@ function HeroMain(props) {
 
 	useEffect(() => {
 		const userSearch = searchParams.get("heroes");
-		console.log(userSearch);
 		if (userSearch) {
 			setSearchHero(userSearch);
 			getHero(userSearch);

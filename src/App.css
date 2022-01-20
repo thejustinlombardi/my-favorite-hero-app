@@ -4,7 +4,7 @@
 }
 
 html {
-	background-image: url("https://i.imgur.com/F77OLFH.jpg");
+	background-image: url("https://i.imgur.com/jC56Cbl.jpg?1");
 }
 
 h1 {
@@ -74,6 +74,7 @@ footer a {
 	justify-content: center;
 	font-family: "Rye", cursive;
 	letter-spacing: 0.5rem;
+	margin-bottom: 10px;
 }
 
 @media (min-width: 600px) {
@@ -83,7 +84,7 @@ footer a {
 	}
 
 	html {
-		background-image: url("https://i.imgur.com/F77OLFH.jpg");
+		background-image: url("https://i.imgur.com/jC56Cbl.jpg?1");
 	}
 
 	h1 {
@@ -160,5 +161,6 @@ footer a {
 		flex-direction: row;
 		justify-content: center;
 		font-family: "Rye", cursive;
+		margin-bottom: 20px;
 	}
 }
