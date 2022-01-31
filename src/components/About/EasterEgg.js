@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // This is all of the info for the developer 'hero' card
 function EasterEgg(props) {
 	return (
@@ -18,6 +18,7 @@ function EasterEgg(props) {
 				<h4>
 					First Appearance:
 					<a
+						className="the-game"
 						target="_blank"
 						href="https://thejustinlombardi.github.io/simon-browser-game/"
 						rel="noreferrer">

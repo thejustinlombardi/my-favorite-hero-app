@@ -1,6 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* APP component */
 * {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
 	transition: ease all 0.5s;
 }
 
@@ -25,14 +35,27 @@ h1 {
 
 .app-container {
 	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 }
 
 .app-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
 	justify-content: space-evenly;
 	font-family: 'Rye', cursive;
 	padding: 10px 0px 10px 0px;
@@ -49,9 +72,17 @@ nav a {
 }
 
 div a {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	border: 1px solid white;
 	text-decoration: none;
@@ -73,8 +104,15 @@ footer a {
 }
 
 .app-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	font-family: 'Rye', cursive;
 	letter-spacing: 0.5rem;
@@ -85,6 +123,7 @@ footer a {
 @media (min-width: 600px) {
 	/* APP component */
 	* {
+		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
@@ -112,9 +151,17 @@ footer a {
 	}
 
 	.app-nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
+		-ms-flex-pack: distribute;
 		justify-content: space-around;
+		-webkit-box-align: end;
+		-ms-flex-align: end;
 		align-items: flex-end;
 		font-family: 'Rye', cursive;
 		padding: 0px 0px 40px 0px;
@@ -131,14 +178,25 @@ footer a {
 
 	nav a:hover {
 		background-color: transparent;
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
 		box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
 		transform: scale(1.1);
 	}
 
 	div a {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
+		-ms-flex-pack: distribute;
 		justify-content: space-around;
 		border: 1px solid white;
 		text-decoration: none;
@@ -149,7 +207,14 @@ footer a {
 		cursor: pointer;
 		/* Used below reference to learn how to enlarge image on hover */
 		/* https://www.codegrepper.com/code-examples/css/how+to+raise+image+when+hover */
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
 		transform: scale(1.05);
+		-webkit-box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
+		box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
+	}
+
+	.learn-more:hover {
 		box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 100%);
 	}
 
@@ -164,8 +229,15 @@ footer a {
 	}
 
 	.app-footer {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
 		font-family: 'Rye', cursive;
 		margin-bottom: 20px;

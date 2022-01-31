@@ -1,9 +1,10 @@
 /* ABOUT component */
 .about-div {
 	margin: 30px;
-	font-family: "Fredericka the Great", cursive;
+	font-family: 'Fredericka the Great', cursive;
 	letter-spacing: 0.1rem;
 	line-height: 1.5rem;
+	animation: slidein 1s;
 }
 .about-title {
 	text-align: center;
@@ -23,7 +24,7 @@
 	/* ABOUT component */
 	.about-div {
 		margin: 50px;
-		font-family: "Fredericka the Great", cursive;
+		font-family: 'Fredericka the Great', cursive;
 		letter-spacing: 0.1rem;
 		line-height: 2.5rem;
 	}
@@ -43,5 +44,9 @@
 
 	.about-a:hover {
 		box-shadow: none;
+	}
+
+	.the-game {
+		width: 300px;
 	}
 }
